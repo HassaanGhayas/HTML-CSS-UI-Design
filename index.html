@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero-image shadow-drop-bottom">
+      <nav>
+        <div class="nav">
+          <span class="playfair-display">Roamly</span>
+          <ul class="display-hidden">
+            <li>Book a Trip</li>
+            <li>About us</li>
+            <li>Blog</li>
+          </ul>
+          <span id="account" class="display-hidden"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              viewBox="0 -960 960 960"
+              width="20px"
+              fill="#36454F"
+            >
+              <path
+                d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"
+              /></svg>Account</span
+          >
+          <span class="hamburger-menu" onclick="ShowMenu()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#36454F"
+            >
+              <path
+                d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"
+              /></svg></span>
+        </div>
+        <div class="nav sidebar">
+          <ul class="sidebar-ul">
+            <li onclick="HideMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"
+                />
+              </svg>
+            </li>
+            <li class="sidebar-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#36454F"
+              >
+                <path
+                  d="M288-96v-96l120-84v-137L96-288v-120l312-215.04V-792q0-29.7 21.21-50.85 21.21-21.15 51-21.15T531-842.85q21 21.15 21 50.85v168.96L864-408v120L552-413v137l120 84v96l-192-57.6L288-96Z"
+                /></svg>Book a Trip
+            </li>
+            <li class="sidebar-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#36454F"
+              >
+                <path
+                  d="M192-696v-72h576v72H192Zm0 528v-216h-48v-72l48-192h576l48 192v72h-48v216h-72v-216H528v216H192Zm72-72h192v-144H264v144Zm-46-216h524-524Zm0 0h524l-30-120H248l-30 120Z"
+                /></svg>About us
+            </li>
+            <li class="sidebar-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#36454F"
+              >
+                <path
+                  d="M384-408h192v-72H384v72Zm0-120h336v-72H384v72Zm0-120h336v-72H384v72Zm-72 408q-29.7 0-50.85-21.15Q240-282.3 240-312v-480q0-29.7 21.15-50.85Q282.3-864 312-864h480q29.7 0 50.85 21.15Q864-821.7 864-792v480q0 29.7-21.15 50.85Q821.7-240 792-240H312Zm0-72h480v-480H312v480ZM168-96q-29.7 0-50.85-21.15Q96-138.3 96-168v-552h72v552h552v72H168Zm144-696v480-480Z"
+                /></svg>Blog
+            </li>
+            <li class="sidebar-li">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20px"
+                viewBox="0 -960 960 960"
+                width="20px"
+                fill="#36454F"
+              >
+                <path
+                  d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"
+                /></svg>Account
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-section">
+        <div class="text-div">
+          <span class="playfair-display"
+            >Plan a Trip This <br />
+            Winter</span
+          >
+          <span
+            style="
+              border: 2px solid #36454f;
+              padding: 8px 20px;
+              border-radius: 10px;
+            "
+            class="hover-btn"
+            >Book Now</span
+          >
+          <p>"Your Gateway to Unforgettable Travels"</p>
+        </div>
+      </div>
+    </div>
+    <!-- I messed up here  -->
+    <h1 style="padding: 40px 20px; text-align: center; font-size: 56px; color: #36454f; font-weight: 300;" class="playfair-display">Travel in Elegance</h1>
+    <section class="section-one">
+      <div class="section-one-div-one shadow-drop-center shadow-inset-center">
+        <span class="playfair-display">Why Choose <span style="color: #4e8bfc;">Roamly?</span></span>
+        <p>At Roamly, we believe every journey is unique, and we're here to make yours unforgettable. Here’s why travelers trust us:</p>
+        <ul>
+          <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lime"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Tailored Experiences</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lime"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Expert Guides</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lime"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Seamless Booking</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lime"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Wide Range of Destinations</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lime"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Unmatched Customer Service</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="lime"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>Sustainable Travel</li>
+        </ul>
+        <p>Choose Roamly for an adventure crafted just for you!</p>
+      </div>
+      <div class="section-one-div-one shadow-drop-center shadow-inset-center">
+        <span class="playfair-display"><span style="color: #4e8bfc;">Safety</span> First</span>
+        <p>Your well-being is our top priority. Our team carefully vets every destination, and our guides are trained to ensure a safe, enjoyable journey. Roamly ensures you’re in safe hands no matter where you roam.</p>
+        <span class="playfair-display">Travel Made <span style="color: #4e8bfc;">Easy</span></span>
+        <p>From booking to the journey’s end, we make your travel experience as smooth as possible. Our streamlined processes, flexible options, and on-the-ground assistance mean you can focus on enjoying your adventure rather than worrying about logistics.
+        </p>
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="playfair-display" id="heading">Our Qualities</div>
+      <div class="section-two-main">
+      <div class="shadow-inset-center">
+        <span class="playfair-display">Our <span style="color: #4e8bfc;">Promise</span> to You</span>
+        <p>At Roamly, we’re committed to providing exceptional travel experiences. We prioritize your safety, comfort, and satisfaction above all else, ensuring that each journey leaves you with lasting memories and a desire for your next adventure.</p>
+      </div>
+      <div class="shadow-inset-center shadow-drop-center">
+        <span class="playfair-display">The <span style="color: #4e8bfc;">Roamly Difference</span></span>
+        <p>With Roamly, you’re more than just a tourist—you’re a traveler. We go beyond traditional tours to offer immersive, meaningful experiences that connect you deeply with each destination’s culture, nature, and history.</p>
+      </div>
+      <div class="shadow-inset-center shadow-drop-center">
+        <span class="playfair-display"><span style="color: #4e8bfc;">Adventure</span> for Every Style</span>
+        <p>From luxury getaways to rugged adventures, Roamly offers something for everyone. Whether you're looking for a leisurely escape or an action-packed journey, our diverse tours cater to different styles and budgets, making it easy for you to find your perfect fit.</p>
+      </div>
+      <div class="shadow-inset-center shadow-drop-center">
+        <span class="playfair-display"><span style="color: #4e8bfc;">24/7</span> Support on the Go</span>
+        <p>Your peace of mind is our priority. With our 24/7 support, you’re never alone on your journey. Whether it’s an itinerary question, a local recommendation, or emergency assistance, our team is just a call or message away, ready to help wherever you are.</p>
+      </div>
+      <div class="shadow-inset-center shadow-drop-center">
+        <span class="playfair-display">Hear from <span style="color: #4e8bfc;">Our</span> Travelers</span>
+        <p>"Roamly made my dream trip a reality!" - Our travelers love sharing their incredible experiences with us. Don’t just take our word for it—check out testimonials and discover why travelers choose Roamly again and again.        </p>
+      </div>
+      <div class="shadow-inset-center shadow-drop-center">
+        <span class="playfair-display">Our <span style="color: #4e8bfc;">Commitment</span> to Community</span>
+        <p>We believe in giving back. Through partnerships with local organizations, we ensure that our tours positively impact the communities we visit, supporting local economies and promoting cultural preservation.        </p>
+      </div>
+    </div>
+    </section>
+    <section class="section-three">
+      <div id="section-three-div">
+        <div>
+        <span>Discover the wonder of travel every week</span>
+        <p>Get personalized travel inspiration, the latest travel hacks, and exclusive deals straight to your inbox.</p>
+      </div>
+        <div id="input-div"><input type="email" name="email" placeholder="e.g johndoe@gmail.com" id="input"><button id="input-button">Sign up</button></div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-grid">
+        <div>
+        <span class="playfair-display" style="font-size: 26px;">Roamly</span>
+        <p style="max-width: 300px;">Get out there & discover your next slope, mountain & destination!</p>
+        </div>
+        <div id="footer-second-div">
+          <ul>
+            <li>More on The Blog</li>
+            <li><a href="#">About Roamly</a></li>
+            <li><a href="#">Contributors & Writers</a></li>
+            <li><a href="#">Write For Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul>
+            <li>More on Roamly</li>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div>Copyright 2024 Roamly, Inc. Terms & Privacy</div>
+        <div style="display: flex; gap: 10px;">
+          <a href="#">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2619_2125)">
+          <path d="M13.9381 6.04381C13.9381 6.28943 13.9381 7.09001 13.9381 8.22739H17.8486L17.4246 11.7133H13.9381C13.9381 17.0893 13.9381 24.2934 13.9381 24.2934H9.31032C9.31032 24.2934 9.31032 17.1847 9.31032 11.7133H6.89893V8.22739H9.31032C9.31032 6.84495 9.31032 5.86193 9.31032 5.58823C9.31032 4.28417 9.21207 3.66542 9.76618 2.65489C10.3206 1.6444 11.8843 0.308746 14.589 0.340902C17.2943 0.37423 18.4346 0.63448 18.4346 0.63448L17.8486 4.34965C17.8486 4.34965 16.1211 3.89351 15.2732 4.05607C14.4264 4.21868 13.9381 4.74031 13.9381 6.04381Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_2619_2125">
+          <rect width="24" height="24" fill="white" transform="translate(0.666748 0.316895)"/>
+          </clipPath>
+          </defs>
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22.3169C9.85576 22.3169 8.31273 22.3158 7.1097 22.1992C5.92045 22.0839 5.1597 21.8623 4.55258 21.4808C3.85868 21.0449 3.27192 20.4582 2.83591 19.7643C2.45455 19.1572 2.23288 18.3964 2.11773 17.2072C2.00106 16.0042 2 14.4611 2 12.3169C2 10.1727 2.00106 8.62962 2.11773 7.42659C2.23288 6.23735 2.45455 5.47659 2.83591 4.86947C3.2719 4.17555 3.85866 3.5888 4.55258 3.1528C5.1597 2.77144 5.92045 2.54977 7.1097 2.43462C8.31258 2.31796 9.85561 2.31689 12 2.31689C14.1442 2.31689 15.6873 2.31796 16.8903 2.43462C18.0795 2.54977 18.8403 2.77144 19.4474 3.1528C20.1413 3.58882 20.728 4.17557 21.1639 4.86947C21.5455 5.47659 21.767 6.23735 21.8823 7.42659C21.9989 8.62962 22 10.1727 22 12.3169C22 14.4611 21.9989 16.0042 21.8823 17.2072C21.767 18.3964 21.5455 19.1572 21.1639 19.7643C20.728 20.4582 20.1413 21.0449 19.4474 21.4808C18.8403 21.8623 18.0795 22.0839 16.8903 22.1992C15.6873 22.3158 14.1442 22.3169 12 22.3169Z" fill="white" stroke="white" stroke-width="2"/>
+            <path d="M12 17.3169C14.2091 17.3169 16 15.526 16 13.3169C16 11.1078 14.2091 9.31689 12 9.31689C9.79086 9.31689 8 11.1078 8 13.3169C8 15.526 9.79086 17.3169 12 17.3169Z" fill="white" stroke="black" stroke-width="2"/>
+            <path d="M16.875 8.56689C17.4963 8.56689 18 8.06321 18 7.44189C18 6.82057 17.4963 6.31689 16.875 6.31689C16.2537 6.31689 15.75 6.82057 15.75 7.44189C15.75 8.06321 16.2537 8.56689 16.875 8.56689Z" fill="black"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.1586 5.3539C17.1695 4.20406 16.6514 2.71846 16.6926 1.20598L12.9969 1.1167C12.9969 1.1167 12.9969 1.27438 12.9969 1.48702V16.3073C13.0485 20.9959 5.64064 20.8821 6.22672 15.6996C6.58504 13.6389 8.79928 12.3708 10.7668 13.0877V9.31678C6.48328 8.57086 2.42392 11.9803 2.46664 16.3238C2.84104 25.7438 16.3521 25.745 16.727 16.3238C16.6326 15.9866 16.6854 9.70918 16.672 9.17974C18.3525 10.2254 20.3078 10.7481 22.288 10.6812V6.7867C20.4573 6.7867 19.0602 6.29998 18.1586 5.3539Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4.68478C23.1182 5.08637 22.1687 5.35795 21.1727 5.47929C22.1898 4.85524 22.9702 3.86572 23.3379 2.68695C22.3856 3.26478 21.3333 3.68514 20.2092 3.91049C19.3133 2.92963 18.0328 2.31714 16.6156 2.31714C13.8982 2.31714 11.6936 4.57788 11.6936 7.36589C11.6936 7.7617 11.7359 8.14596 11.8204 8.51577C7.72812 8.30486 4.10072 6.29691 1.67072 3.23877C1.2467 3.98705 1.00439 4.85524 1.00439 5.77976C1.00439 7.53057 1.87357 9.07626 3.19493 9.982C2.38916 9.95744 1.62845 9.72776 0.963547 9.35217V9.41428C0.963547 11.8614 2.66103 13.9025 4.91495 14.3648C4.5022 14.4833 4.06691 14.5425 3.61754 14.5425C3.30058 14.5425 2.99067 14.5122 2.69061 14.4529C3.31748 16.458 5.1347 17.9184 7.29001 17.9574C5.6052 19.3124 3.48089 20.12 1.17485 20.12C0.777597 20.12 0.384575 20.0968 0 20.0506C2.17926 21.4807 4.76844 22.3171 7.54781 22.3171C16.6057 22.3171 21.5573 14.6248 21.5573 7.95238C21.5573 7.73281 21.5531 7.51324 21.5446 7.298C22.5068 6.58583 23.3421 5.69742 24 4.68478Z" fill="white"/>
+                </svg>   
+              </a>                                       
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
