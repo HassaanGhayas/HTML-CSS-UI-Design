@@ -243,6 +243,11 @@ nav span:first-child{
     border: 2px solid #36454F;
     background-color: #36454F;
     color: white;
+    transition: 1s;
+}
+
+#input-button:hover{
+    background-color: transparent;
 }
 
 footer{
